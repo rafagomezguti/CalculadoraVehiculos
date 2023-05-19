@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <base target="_top">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <script src="JS.js"></script>
     <title>Calculadora financiera</title>
   </head>
   <link rel="stylesheet" type="text/css" href="CSS.css">
@@ -83,29 +84,8 @@
     </div>
   
   </body>
-  <script>
-      function calcular() {
-        var avaluo = parseInt(document.getElementById("avaluo").value);
-        var impuesto = parseInt(document.getElementById("impuesto").value);
-        var placa = document.getElementById("placa").value;
-        var condicionCheckbox = document.getElementById("condicionCheckbox");
-
-        //variables
-        var traspaso = 145000;
-        var ministerio = 29700;
-        var runt = 4900;
-        var avaluo = avaluo * 0.01;
-        var prenda = 127000;
-
-        //Operacion
-        if (condicionCheckbox.checked) {
-          var resultado = avaluo + impuesto + ministerio + runt + traspaso + prenda;
-        } else {
-          var resultado = avaluo + impuesto + ministerio + runt + traspaso;
-        }
-        document.getElementById("resultado").innerHTML = "Para el vehiculo de placa " + placa + " el valor del traspaso es: " + resultado;
-      }
-    </script>
+  
+  
   
   
 </html>
