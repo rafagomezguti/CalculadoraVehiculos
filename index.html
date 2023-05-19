@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  </head>
+  <link rel="stylesheet" type="text/css" href="CSS.css">
+  <body>
+    <h1>Calcular traspaso</h1>
+    <form id="myForm">
+
+      
+      <div class="mb-3">
+        <label for="placa">Ingrese la placa:</label>
+      </div>
+      
+      <input type="text" id="placa" name="placa" placeholder="Placa del vehículo"> <br><br>
+      <label for="avaluo">Avaluo:</label>
+      <input type="number" id="avaluo" name="avaluo"><br><br>
+      <label for="impuesto">Impuesto:</label>
+      <input type="number" id="impuesto" name="impuesto"><br><br>
+      <input type="checkbox" id="condicionCheckbox">
+      <label for="condicionCheckbox">Prenda</label>
+      <input type="button" value="calcular" onclick="calcular()">
+  
+    </form>
+
+
+    <p id="resultado"></p>
+
+    <script src="JS.js"></script>
+  </body>
+</html>
