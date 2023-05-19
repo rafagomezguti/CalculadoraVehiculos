@@ -1,0 +1,19 @@
+body {
+    background-color: #f7f9fa;
+}
+
+.container {
+    background-color: #eaeffa; /* Cambiar a tu color deseado */
+}
+
+h1{
+    font-family: Arial, sans-serif;
+    font-size: 45px;
+    color: #333;
+}
+  
+p{
+    font-family: Georgia, serif;
+    font-size: 22px;
+    color: #030303;
+}
