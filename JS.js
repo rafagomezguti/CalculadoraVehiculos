@@ -20,3 +20,8 @@ function calcular() {
   }
   document.getElementById("resultado").innerHTML = "Para el vehiculo de placa " + placa + " el valor del traspaso es: " + resultado;
 }
+
+function letraMayuscula() {
+      var input = document.getElementById('placa');
+      input.value = input.value.toUpperCase();
+    }
