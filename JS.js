@@ -33,3 +33,9 @@ function formatNumber() {
       var formattedValue = Number(value).toLocaleString('es-ES'); // Formatea el número con separación de miles utilizando el local 'es-ES'
       input.value = formattedValue;
     }
+function formatNumber1() {
+      var input = document.getElementById('impuesto');
+      var value = input.value.replace(/\D/g, ''); // Elimina todos los caracteres que no sean dígitos
+      var formattedValue = Number(value).toLocaleString('es-ES'); // Formatea el número con separación de miles utilizando el local 'es-ES'
+      input.value = formattedValue;
+    }
