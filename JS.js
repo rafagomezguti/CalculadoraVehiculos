@@ -30,12 +30,12 @@ function letraMayuscula() {
 function formatNumber() {
       var input = document.getElementById('avaluo');
       var value = input.value.replace(/\D/g, ''); // Elimina todos los caracteres que no sean dígitos
-      var formattedValue = Number(value).toLocaleString('es-ES'); // Formatea el número con separación de miles utilizando el local 'es-ES'
+      var formattedValue = Number(value).toLocaleString('es-LA'); // Formatea el número con separación de miles utilizando el local 'es-ES'
       input.value = formattedValue;
     }
 function formatNumber2() {
       var input = document.getElementById('impuesto');
       var value = input.value.replace(/\D/g, ''); // Elimina todos los caracteres que no sean dígitos
-      var formattedValue = Number(value).toLocaleString('es-ES'); // Formatea el número con separación de miles utilizando el local 'es-ES'
+      var formattedValue = Number(value).toLocaleString('es-LA'); // Formatea el número con separación de miles utilizando el local 'es-ES'
       input.value = formattedValue;
     }
