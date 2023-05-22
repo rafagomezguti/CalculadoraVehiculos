@@ -18,7 +18,7 @@ function calcular() {
   } else {
     var resultado = avaluo + impuesto + ministerio + runt + traspaso;
   }
-  document.getElementById("resultado").innerHTML = "Para el vehiculo de placa " + placa + " el valor del traspaso es: " + resultado;
+  document.getElementById("resultado").innerHTML = "Para el vehiculo de placa " + placa + " el valor del traspaso es: " + resultado.toLocaleString('es-ES');
 }
 
 function letraMayuscula() {
@@ -26,16 +26,3 @@ function letraMayuscula() {
       input.value = input.value.toUpperCase();
     }
 
-
-function formatNumber() {
-      var input = document.getElementById('avaluo');
-      var value = input.value.replace(/\D/g, ''); // Elimina todos los caracteres que no sean dígitos
-      var formattedValue = Number(value).toLocaleString('es-LA'); // Formatea el número con separación de miles utilizando el local 'es-ES'
-      input.value = formattedValue;
-    }
-function formatNumber2() {
-      var input = document.getElementById('impuesto');
-      var value = input.value.replace(/\D/g, ''); // Elimina todos los caracteres que no sean dígitos
-      var formattedValue = Number(value).toLocaleString('es-LA'); // Formatea el número con separación de miles utilizando el local 'es-ES'
-      input.value = formattedValue;
-    }
